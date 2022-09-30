@@ -1,3 +1,30 @@
 body {
-    background-image: url(https://media3.giphy.com/media/WRoLGgwE4xTQYTxyJg/giphy.gif?cid=ecf05e47g8qwpcsg412r86jhub2yv1b838er5pskkly1j98r&rid=giphy.gif&ct=g);
+    background-image: url(https://media4.giphy.com/media/j4l29DaRrIgEIPRHlt/giphy.gif?cid=ecf05e47car2kijufn9n6328rifysrciy3ctxhvof03ffjn2&rid=giphy.gif&ct=g);
+}
+
+
+header {
+    border: 8px 8px #ee0000;
+    border-style: double;
+}
+
+#titulo-principal {
+    color: white;
+}
+
+main {
+
+    border: 8px 8px #ffffff;
+    border-style: double;
+
+}
+
+
+.container {
+
+    background-color: #e9e8e8c2;
+}
+
+.container-conteudo {
+    background-color: #949191c2
 }

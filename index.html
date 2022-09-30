@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,71 @@
 
     <link rel="stylesheet" href="CSS/index.css">
 </head>
-<body>
-    
 
+<body>
+
+    <!-- INICIO DO HEADER -->
+    <header>
+
+        <h1 id="titulo-principal">Codifique sua Mensagem</h1>
+
+    </header>
+    <!-- FINAL DO HEADER -->
+    
+    <!-- INICIO DA MAIN -->
+    <main>
+
+        <div class="container"> <!-- Todo o conteúdo interativo está aqui -->
+
+            <div class="container-conteudo">
+
+                <div class="tipo-de-cod" class="cod">
+
+                    <select name="escolha-cod" id="cod-escolhido"> <!-- Escolha entre um ou outro -->
+
+                        <option value="opção" id="opção-cifra">Cifra de César</option>
+                        <option value="opção" id="opção-base">Base64</option>
+
+                        <button type="submit" class="btn-escolha">Confirmar</button>
+
+
+                    </select>
+
+
+                </div>
+                
+                <section class="texto-escondido"> <!-- Texto só irá aparecer após a escolha -->
+                    <lable id="lable-principal" class="lable-msg">Mensagem: </lable>
+                    <input id="msg-inicio" class="msg" placeholder="Insira seu texto">
+                </section>
+
+                
+
+                <section class="texto">
+
+
+
+                </section>
+
+
+                <section class="texto-escondido"> <!-- Texto só irá aparecer após a escolha -->
+                    <lable id="lable-final" class="lable-msg">Resultado: </lable>
+                    <input id="msg-result" class="msg">
+                </section>
+
+            </div>
+
+        </div>
+        
+
+    </main>
+    <!-- FINAL DA MAIN -->
+
+    <!-- INICIO DO FOOTER -->
+    <footer>
+
+    </footer>
+    <!-- FINAL DO FOOTER -->
 
 
     <script src="SCRIPT/index.js"></script>
