@@ -1,8 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,300;1,400;1,900&display=swap');
 
+:root {
+
+    /**colocar as fontes e coisas necessárias**/
+
+
+}
+
+
+
 body {
     font-family: 'Lato';
     background-image: url(https://media4.giphy.com/media/j4l29DaRrIgEIPRHlt/giphy.gif?cid=ecf05e47car2kijufn9n6328rifysrciy3ctxhvof03ffjn2&rid=giphy.gif&ct=g);
+    width: 50%;
+    margin: auto;
+
 }
 
 
@@ -21,21 +33,33 @@ header {
 
 main {
 
-    border: 8px 8px #ffffff;
-    border-style: double;
+    
+    
+    
 
 }
-
 
 .container {
 
+    
     background-color: #e9e8e8c2;
+    border-radius: 10px;
+    text-align: center;
+    
 }
 
 .container-conteudo {
-    background-color: #949191c2
+    
+    margin: 20px 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 footer {
+
     color: #ffffff;
+    background-color: #e9e8e8c2;
+    border: 8px 8px #ffffff;
+    border-radius: 10px;
+    text-align: center;
 }
