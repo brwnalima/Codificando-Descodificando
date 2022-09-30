@@ -15,7 +15,7 @@
     <!-- INICIO DO HEADER -->
     <header>
 
-        <h1 id="titulo-principal">Codifique sua Mensagem</h1>
+        <h1 id="titulo-principal">Codifique sua Mensagem - Cifra de César | Base 64</h1>
 
     </header>
     <!-- FINAL DO HEADER -->
@@ -29,36 +29,36 @@
 
                 <div class="tipo-de-cod" class="cod">
 
-                    <select name="escolha-cod" id="cod-escolhido"> <!-- Escolha entre um ou outro -->
+                    <h3>Escolha uma linguagem</h3>
 
-                        <option value="opção" id="opção-cifra">Cifra de César</option>
-                        <option value="opção" id="opção-base">Base64</option>
-
-                        <button type="submit" class="btn-escolha">Confirmar</button>
-
-
+                    <select name="escolha-cod" id="cod-escolhido" aria-placeholder="Selecione"> <!-- Escolha entre um ou outro -->
+                        <option value="select" id="opção-selecione" disabled selected>Selecione</option> 
+                            <!-- disabled selected: Selecionar vai se ruma opção, mas não poderá ser selecionado de fato-->
+                        <option value="cifraCesar" id="opção-cifra">Cifra de César</option>
+                        <option value="base.64" id="opção-base">Base64</option>
                     </select>
 
+                    <button type="submit" class="btn-escolha">Confirmar</button>
 
                 </div>
+
+
                 
                 <section class="texto-escondido"> <!-- Texto só irá aparecer após a escolha -->
+                    <h3 alt="Conjunto de técnicas para proteger uma informação entre o emissor e receptor.">Criptografia</h3>
                     <lable id="lable-principal" class="lable-msg">Mensagem: </lable>
                     <input id="msg-inicio" class="msg" placeholder="Insira seu texto">
                 </section>
 
-                
-
-                <section class="texto">
-
-
-
-                </section>
+                <div class="btns">
+                    <button type="submit" class="btn-codificar">Codificar</button>
+                    <button type="submit" class="btn-descodificar">Descodificar</button>
+                </div>
 
 
                 <section class="texto-escondido"> <!-- Texto só irá aparecer após a escolha -->
                     <lable id="lable-final" class="lable-msg">Resultado: </lable>
-                    <input id="msg-result" class="msg">
+                    <input id="msg-result" class="msg" placeholder="Resultado">
                 </section>
 
             </div>
@@ -71,7 +71,7 @@
 
     <!-- INICIO DO FOOTER -->
     <footer>
-
+        <p>Tjuf eftfowpmwjep qps <a href="#">Bruna Lima</a> - <a href="#">Resilia Educação</a></p>
     </footer>
     <!-- FINAL DO FOOTER -->
 
