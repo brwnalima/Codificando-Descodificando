@@ -1,19 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,300;1,400;1,900&display=swap');
+
 @font-face {
-    font-family: 'starWar';
-    src: url(FONT/starjedi/Starjhol.ttf) format('truetype');
+    font-family: 'Mom';
+    src: url('Mom.ttf') format('truetype');
 }
+
+
 @font-face {
     font-family: 'starWar2';
-    src: url(FONT/stjelogo/Stjldbl1.ttf) format('truetype');
+    src: url(FONT/stjelogo/Stjldbl1.ttf) format('truetype') 
 }
 
 
 :root {
 
     /**colocar as fontes e coisas necessárias**/
-    --font-logo: 'starWar2';
+    --font-logo: 'Mom';
     --font-txt: 'starWar';
+
+    /** cores **/
+
+    --cor-fundo: #000000c2;
+    --cor-font: #ffffff;
+
+
+    --font-size-txt: 140%;
+    --font-size-title: 200%;
+    --font-size-footer: 100%;
 
 
 }
@@ -21,23 +34,33 @@
 
 
 body {
-    font-family: 'Lato';
-    background-image: url(https://media4.giphy.com/media/MHDgCcpHLTVRK/giphy.gif?cid=ecf05e47e87uyk3fmea0sldlq8f5zc6iberxds84syg24xid&rid=giphy.gif&ct=g);
-    width: 50%;
+    font-family: 'Mom';
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/2752de67923831.5b4b68cc4a519.gif);
+    
+    background-size: 110%;
+    back
+    
+    width: 100%;
+    height: 100%;
     margin: auto;
 
 }
 
 
 header {
-    background-color: #e9e8e8c2;
-    border: 8px 8px #ffffff;
+    margin: auto;
+    background-color: var(--cor-fundo);
+    border: 8px 8px var(--cor-font);
     border-radius: 10px;
+    margin-top: 15%;
+    width: 60%;
+    font-size: var(--font-size-title);
+    
     
 }
 
 #titulo-principal {
-    color: white;
+    color: var(--cor-font);
     text-align: center;
     text-shadow: black;
     font-family: var(--font-logo);
@@ -45,18 +68,20 @@ header {
 
 main {
 
-    
-    
-    
+    margin: auto;
+    width: 60%;
 
 }
 
 .container {
 
-    
-    background-color: #e9e8e8c2;
+    font-size: var(--font-size-txt);
+    background-color: var(--cor-fundo);
     border-radius: 10px;
     text-align: center;
+    color: var(--cor-font);
+    border: 1px 5px solid var(--cor-font);
+    
     
 }
 
@@ -65,13 +90,19 @@ main {
     margin: 20px 20px;
     margin-top: 20px;
     margin-bottom: 10px;
+   
 }
 
 footer {
 
-    color: #ffffff;
-    background-color: #e9e8e8c2;
-    border: 8px 8px #ffffff;
+    color: var(--cor-font);
+    background-color: var(--cor-fundo);
+    border: 8px 8px var(--cor-font);
     border-radius: 10px;
     text-align: center;
+    margin: auto;
+    width: 60%;
+    font-size: var(--font-size-footer);
+
+
 }
