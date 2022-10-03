@@ -1,8 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,300;1,400;1,900&display=swap');
+@font-face {
+    font-family: 'starWar';
+    src: url(FONT/starjedi/Starjhol.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'starWar2';
+    src: url(FONT/stjelogo/Stjldbl1.ttf) format('truetype');
+}
+
 
 :root {
 
     /**colocar as fontes e coisas necessárias**/
+    --font-logo: 'starWar2';
+    --font-txt: 'starWar';
 
 
 }
@@ -11,7 +22,7 @@
 
 body {
     font-family: 'Lato';
-    background-image: url(https://media4.giphy.com/media/j4l29DaRrIgEIPRHlt/giphy.gif?cid=ecf05e47car2kijufn9n6328rifysrciy3ctxhvof03ffjn2&rid=giphy.gif&ct=g);
+    background-image: url(https://media4.giphy.com/media/MHDgCcpHLTVRK/giphy.gif?cid=ecf05e47e87uyk3fmea0sldlq8f5zc6iberxds84syg24xid&rid=giphy.gif&ct=g);
     width: 50%;
     margin: auto;
 
@@ -29,6 +40,7 @@ header {
     color: white;
     text-align: center;
     text-shadow: black;
+    font-family: var(--font-logo);
 }
 
 main {
