@@ -1,22 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,300;1,400;1,900&display=swap');
 
 @font-face {
-    font-family: 'Mom';
-    src: url('Mom.ttf') format('truetype');
+    font-family: 'StarLogo2';
+    src: url('../FONT/STJEDISE.TTF') format('truetype');
 }
-
 
 @font-face {
-    font-family: 'starWar2';
-    src: url(FONT/stjelogo/Stjldbl1.ttf) format('truetype') 
+    font-family: 'StarTxt';
+    src: url('../FONT/Starjhol.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'StarTxt2';
+    src: url('../FONT/Starjout.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'StarLogo';
+    src: url('../FONT/Strjmono.ttf') format('truetype');
+}
 
 :root {
 
     /**colocar as fontes e coisas necessárias**/
-    --font-logo: 'Mom';
-    --font-txt: 'starWar';
+    --font-logo: 'StarLogo';
+    --font-txt: 'StarTxt';
+    --font-txt2: 'StarTxt2';
+    --font-txt3: 'StarTxt3';
 
     /** cores **/
 
@@ -34,12 +44,9 @@
 
 
 body {
-    font-family: 'Mom';
-    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/2752de67923831.5b4b68cc4a519.gif);
-    
-    background-size: 110%;
-    back
-    
+    font-family: var(--font-size-txt);
+    background-image: url(https://media2.giphy.com/media/H6yzZcjRymlWAxDICb/giphy.gif?cid=ecf05e47nf152c4kal9795oyegxxithgijugg22c9sps9b7z&rid=giphy.gif&ct=g);
+    background-size: 150%;
     width: 100%;
     height: 100%;
     margin: auto;
@@ -50,26 +57,26 @@ body {
 header {
     margin: auto;
     background-color: var(--cor-fundo);
-    border: 8px 8px var(--cor-font);
     border-radius: 10px;
-    margin-top: 15%;
+    margin-top: 5%;
     width: 60%;
     font-size: var(--font-size-title);
-    
     
 }
 
 #titulo-principal {
-    color: var(--cor-font);
+    
     text-align: center;
-    text-shadow: black;
     font-family: var(--font-logo);
+    color: var(--cor-font);
+    
 }
 
 main {
 
     margin: auto;
     width: 60%;
+    font-family: var(--font-txt);
 
 }
 
@@ -103,6 +110,7 @@ footer {
     margin: auto;
     width: 60%;
     font-size: var(--font-size-footer);
+    font-family: var(--font-logo);
 
 
 }
