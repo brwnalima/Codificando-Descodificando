@@ -35,7 +35,7 @@
 
 
     --font-size-txt: 140%;
-    --font-size-title: 200%;
+    --font-size-title: 250%;
     --font-size-footer: 90%;
     --font-size-lable: 120%;
 
@@ -45,7 +45,7 @@
 
 body {
     font-family: var(--font-size-txt);
-    background-image: url(https://media2.giphy.com/media/xypNpNth5oyVyUCdxZ/giphy.gif?cid=ecf05e47yvbbl8rhhkixdkic6l9qhznko87w9lywvun8o7rt&rid=giphy.gif&ct=g);
+    background-image: url(https://media4.giphy.com/media/H6yzZcjRymlWAxDICb/giphy.gif?cid=ecf05e47n74ka94b3n4de4sbl6lkstfkmtcewef7ptl3tn9c&rid=giphy.gif&ct=g);
     line-height: 100%;
     letter-spacing: 5%;
     background-size: 100%;
@@ -58,10 +58,9 @@ body {
 /**HEADER**/
 
 header {
+
     margin: auto;
-    background-color: var(--cor-fundo);
-    border-radius: 10px;
-    margin-top: 12%;
+    margin-top: 3%;
     width: 60%;
     font-size: var(--font-size-title);
     
