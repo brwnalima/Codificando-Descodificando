@@ -213,6 +213,7 @@ footer {
 
 @media only screen and (max-width: 1440px) { 
 
+
     select {
 
         width: 20%;
@@ -237,6 +238,8 @@ footer {
 
         transition: all 0.5s ease-in-out;
     }
+
+    
 
 }
 
@@ -343,6 +346,8 @@ footer {
         font-size: 10px;
         transition: all 0.5s ease-in-out;
     } 
+
+
 }
 
 
