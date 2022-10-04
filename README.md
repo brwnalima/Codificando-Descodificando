@@ -1,4 +1,4 @@
-# <h1 align="center">CriptoWar<//h1> 
+# <h1 align="center">CriptoWar</h1> 
     
 <h4 align="center">Projeto Ind. - Curso Dev. Full Stack (Resilia)</h4>
 
