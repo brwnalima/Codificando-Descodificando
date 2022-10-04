@@ -1,5 +1,5 @@
 # <h1 align="center">
-    CriptoWar<style size='16px 16px'>![favicon-darth](https://user-images.githubusercontent.com/112510971/193714535-edae4552-ab5f-4434-8ee4-41cce8e8ea13.png)</style><//h1> 
+    CriptoWar <style width=16px>![favicon-darth](https://user-images.githubusercontent.com/112510971/193714535-edae4552-ab5f-4434-8ee4-41cce8e8ea13.png)</style><//h1> 
     
 <h4 align="center">Projeto Ind. - Curso Dev. Full Stack (Resilia)</h4>
 
