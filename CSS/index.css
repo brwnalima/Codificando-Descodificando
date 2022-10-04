@@ -50,7 +50,7 @@ body {
     
     line-height: 100%;
     letter-spacing: 5%;
-    background-size: auto 150%;
+    background-size: auto 116%;
     width: 100%;
     height: 100%;
     margin: auto;
@@ -210,3 +210,61 @@ footer {
 /**FIM DO FOOTER**/
 
 /**RESPONSIVO**/
+
+@media only screen and (max-width: 800px) {
+    
+    #titulo-principal {
+        font-size: 150%;
+        transition: all 0.5s;
+    }
+
+    .container {
+
+        font-size: 100%;
+        transition: all 0.5s;
+    }
+
+    select {
+    
+        height: 35px;
+        width: 50%;
+        display: grid;
+        grid-column: auto;
+        margin: auto;
+        margin-top: 1%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    .btn-escolha, .btn-cod-ou-desc {
+
+        height: 26px;
+        width: 50%;
+        display: grid;
+        grid-column: auto;
+        margin: auto;
+        margin-top: 2%;
+        margin-top: 1%;
+        margin-bottom: 2%;
+        text-align: center;
+        transition: all 0.5s;
+        font-size: 11px;
+
+    }
+
+    .lable-msg {
+        margin-top: 2%;
+        transition: all 0.5s;
+        
+    }
+
+    ::placeholder, footer, .msg {
+        font-size: 10px;
+        transition: all 0.5s;
+    }
+
+
+
+
+
+}
