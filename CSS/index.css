@@ -30,8 +30,9 @@
 
     /** cores **/
 
-    --cor-fundo: #000000c2;
+    --cor-fundo: #00000070;
     --cor-font: #ffffff;
+    --cor-extra: #f31865;
 
 
     --font-size-txt: 140%;
@@ -45,7 +46,7 @@
 body {
 
     font-family: var(--font-size-txt);
-    background-image: url(https://i.pinimg.com/originals/0c/d0/97/0cd097dc4b5e78e0446fc97e4216b520.gif);
+    background-image: url(../IMAGES/fundo.gif);
     background-repeat: no-repeat;
     
     line-height: 100%;
@@ -206,6 +207,10 @@ footer {
     font-size: var(--font-size-footer);
     font-family: var(--font-logo);
 
+}
+
+a {
+    color: var(--cor-extra);
 }
 /**FIM DO FOOTER**/
 
