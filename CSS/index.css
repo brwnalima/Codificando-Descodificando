@@ -127,7 +127,7 @@ main {
 select {
 
     height: 35px;
-    width: 18%;
+    width: 23%;
     font-family: var(--font-txt2);
     letter-spacing: 1px;
     
@@ -141,13 +141,6 @@ option select {
     letter-spacing: 2px;
 }
 
-.btn-escolha {
-
-    height: 35px;
-    width: 15%;
-    font-family: var(--font-txt2);
-    letter-spacing: 2px;
-}
 
 button:hover {
     transform: scale(1.1);
@@ -178,6 +171,11 @@ button:hover {
 
 }
 
+
+#divEscondida {
+    display: none;
+}
+
 .msg {
 
     display: grid; /**DESCEU O CAMPO DO INPUT**/
@@ -190,6 +188,18 @@ button:hover {
     margin: auto;
     font-family: var(--font-txt2);
     
+}
+
+.passo {
+    display: flex; /**DESCEU O CAMPO DO INPUT**/
+    margin-bottom: 2%;
+    padding: 2px;
+    margin-top: 10px;
+    width: 25%;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+    font-family: var(--font-txt2);
 }
 
 /**FIM MAIN**/
@@ -227,20 +237,18 @@ a {
         transition: all 0.5s ease-in-out;
     }
 
-    .btn-escolha {
-
-        width: 20%;
-        font-size: 12px;
-
-        transition: all 0.5s ease-in-out;
-
-    }
 
     .btn-cod-ou-desc {
 
         width: 25%;
         font-size: 12px;
 
+        transition: all 0.5s ease-in-out;
+    }
+
+    .passo {
+        padding: 2px;
+        width: 20%;
         transition: all 0.5s ease-in-out;
     }
 
@@ -273,7 +281,7 @@ a {
         transition: all 0.5s ease-in-out;
     }
 
-    .btn-escolha, .btn-cod-ou-desc {
+    .btn-cod-ou-desc {
 
         height: 26px;
         width: 50%;
@@ -299,9 +307,21 @@ a {
         font-size: 10px;
         transition: all 0.5s ease-in-out;
     }
+
+    .passo {
+        padding: 2px;
+        width: 20%;
+        transition: all 0.5s ease-in-out;
+    }
+
 }
 
 @media only screen and (max-width: 501px) {
+
+    body {
+        background-size: auto 180;
+    }
+
     #titulo-principal {
         font-size: 170%;
         transition: all 0.5s ease-in-out;
@@ -325,7 +345,7 @@ a {
         transition: all 0.5s ease-in-out;
     }
 
-    .btn-escolha, .btn-cod-ou-desc {
+    .btn-cod-ou-desc {
 
         height: 26px;
         width: 50%;
@@ -352,6 +372,11 @@ a {
         transition: all 0.5s ease-in-out;
     } 
 
+    .passo {
+        padding: 2px;
+        width: 20%;
+        transition: all 0.5s ease-in-out;
+    }
 
 }
 
