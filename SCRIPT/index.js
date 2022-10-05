@@ -1,5 +1,4 @@
 // Declando variáveis importantes para me ajudar //
-
 var seletor = document.querySelector("select")
 var addContainer = document.getElementById("divEscondida")
 var texto = document.getElementById("msg-inicio")
@@ -12,17 +11,17 @@ var btnCodificar = document.getElementById("btn-codificar")
 // Evento criado para quando o select mudar para o Cifra de Cesar a div escondida (passo) aparecer.
 seletor.addEventListener("change", function(event){
     
-    if (event.target.value == "cifraCesar") { //se o value for o value cifraCesar
+    if (event.target.value == "cifraCesar") { // Se o value for o value cifraCesar
 
-        addContainer.style = "display: block"; //display aparecerá
-        document.body.style.backgroundSize = "121%"
+        addContainer.style = "display: block"; // Display aparecerá
+        document.body.style.backgroundSize = "100%"
 
-      } else { //senão
-    
-        addContainer.style = "display: none"; //display sumirá - no css o display está none
-      }
+    } else { // Senão
+        
+        addContainer.style = "display: none"; // Display sumirá - no css o display está none
+    }
 
-    });
+});
 
 
 // Evento para a página não recarregar 
