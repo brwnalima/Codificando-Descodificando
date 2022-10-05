@@ -2,14 +2,14 @@
 
 var seletor = document.querySelector("select")
 var addContainer = document.getElementById("divEscondida")
-var texto = document.querySelector("#msg-inicio")
-var txtResultado = document.querySelector("#msg-result")
+var texto = document.getElementById("msg-inicio")
+var txtResultado = document.getElementById("msg-result")
 var radioCode = document.getElementById("codificar")
 var radioDecode = document.getElementById("decodificar")
 var btnCodificar = document.getElementById("btn-codificar")
 
 
-//Evento criado para quando o select mudar para o Cifra de Cesar a div escondida (passo) aparecer.
+// Evento criado para quando o select mudar para o Cifra de Cesar a div escondida (passo) aparecer.
 seletor.addEventListener("change", function(event){
     
     if (event.target.value == "cifraCesar") { //se o value for o value cifraCesar
@@ -25,15 +25,13 @@ seletor.addEventListener("change", function(event){
     });
 
 
-
-//evento criado para evitar o comportamento de ao clicar no botão a página recarregar//
+// Evento para a página não recarregar 
 btnCodificar.addEventListener("click", function(event){
     console.log(texto.value)
     event.preventDefault()
 })
     
 // Dependendo do radio selecionado, o botão btnCodificar muda a frase
-
 radioCode.addEventListener("click", function() {
     btnCodificar.innerText = "Codificar Texto"
 });
@@ -43,26 +41,19 @@ radioDecode.addEventListener("click", function() {
 });
     
 
-
-
+// Passo
 var passo = document.querySelector("#passo")
 
-
-
+btnCodificar.addEventListener("click", function() {
     
-botao.addEventListener("click", function() {
-    if(passo.value > 26){
-        return txtResultado.value = `O valor que você usou foi de ${passo.value}. Digite um valor de 1 a 25.`
-    }
-
     if(radioCode.checked && seletor.value == "cifraCesar"){
-        txtResultado.value = cifra(parseInt(passo.value), texto.value);
+        txtResultado.value = cifra(parseInt(passo.value), texto.value)
       //codificar cifra//
     }else if(radioCode.checked && seletor.value == "base.64"){
-        resultado.value = codificandoABase64(texto.value)
+        txtResultado.value = codificandoABase64(texto.value)
         //codificar base 64/
     }else if(radioDecode.checked && seletor.value == "cifraCesar"){
-        txtResultado.value = decifra(parseInt(passo.value), texto.value);
+        txtResultado.value = decifra(parseInt(passo.value), texto.value)
         //decodificar cifra//
     }else if(radioDecode.checked && seletor.value == "base.64"){
         txtResultado.value = decodificandoABase64(texto.value)
@@ -73,8 +64,10 @@ botao.addEventListener("click", function() {
       
     
 function cifra (passo, texto){
+
     var textoCodificado = ""
     var codigo = 0
+
     for(var i = 0; i < texto.length; i++){
         if(texto.charCodeAt(i) >= 65 && texto.charCodeAt(i) <= 90){
             codigo = (((texto.charCodeAt(i) - 65) + passo) % 26) + 65;
@@ -119,7 +112,7 @@ function decifra (passo, texto){
     
       
     
-      //btoa e atob funções js//
+    //Funções de codificar e descodificar em Base64//
     function codificandoABase64(texto) {
         return btoa(texto);
     }
