@@ -60,10 +60,24 @@
                     <input id="msg-inicio" class="msg" placeholder="insira seu texto">
                 </section>
 
+                <!-- Botões radios necessários -->
+
+                <div class="radio-button">
+                      <input type="radio" name="radioInput" class ="radio-input" id="codificar" value="codificar">
+                      <label for="codificar">Codificar</label>
+                </div>
+        
+                <div class="radio-button">
+                      <input type="radio" name ="radioInput" class ="radio-input" id="decodificar" value="decodificar">
+                    <label for="decodificar">Decodificar</label>
+                </div>
+                
+
+                <!-- botão confirmar -->
                 <div class="btns">
                     <button type="submit" class="btn-cod-ou-desc" id="btn-codificar">Codificar</button>
-                    <button type="submit" class="btn-cod-ou-desc"  id="btn-descodificar">Descodificar</button>
                 </div>
+                <!-- Fim dos botões -->
 
                 <section class="texto-escondido"> 
                     <lable id="lable-final" class="lable-msg" id="'lable-final">Resultado: </lable>

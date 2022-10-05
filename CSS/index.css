@@ -160,12 +160,19 @@ button:hover {
     margin-bottom: 2%;
 }
 
+.radio-button {
+
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 16px;
+}
+
 .btn-cod-ou-desc {
 
     margin-top: 1%;
     margin-bottom: 1%;
     height: 35px;
-    width: 26%;
+    width: 40%;
     font-family: var(--font-txt2);
     letter-spacing: 2px;
 
@@ -247,7 +254,7 @@ a {
 
     .btn-cod-ou-desc {
 
-        width: 25%;
+        width: 50%;
         font-size: 12px;
 
         transition: all 0.5s ease-in-out;
@@ -350,6 +357,14 @@ a {
         margin-top: 1%;
         text-align: center;
         transition: all 0.5s ease-in-out;
+    }
+
+    .radio-button {
+
+        margin: auto;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        font-size: 14px;
     }
 
     .btn-cod-ou-desc {

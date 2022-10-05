@@ -19,6 +19,7 @@ seletor.addEventListener("change", function(event){
     if (event.target.value == "cifraCesar") { //se o value for o value cifraCesar
 
         addContainer.style = "display: block"; //display aparecerá
+        document.body.style.backgroundSize = "121%"
 
       } else { //senão
     
@@ -36,7 +37,7 @@ botao.addEventListener("click", function(event){
 
 btnCodificar.addEventListener("click", function(event) {
 
-    if (event.target.value == "base.64"){
+    if (seletor.target.value == "base.64"){
        txtResultado = codeBase(texto)
       //codificar base 64/
     }
