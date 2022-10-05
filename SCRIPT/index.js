@@ -12,52 +12,54 @@ var btnCodificar = document.querySelector("#btn-codificar")
 var btnDecodificar = document.querySelector("#btn-descodificar")
 
 
-//Aqui estou adicionando um evento para quando o usuário interagir 
-//com a opção select
-//O change evento é acionado para <input>, <select> e <textarea>, 
-//quando uma alteração ao valor do elemento é cometida pelo usuário.//
-
+//Evento criado para quando o select mudar para o Cifra de Cesar
+//a div escondida (passo) aparecer.
 seletor.addEventListener("change", function(event){
-    var addContainer = document.getElementById("divEscondida")
-    if (event.target.value == "cifraCesar") {
-
-        addContainer.style = "display: block";
-        
-      } else {
     
-        addContainer.style = "display: none";
+    if (event.target.value == "cifraCesar") { //se o value for o value cifraCesar
+
+        addContainer.style = "display: block"; //display aparecerá
+
+      } else { //senão
+    
+        addContainer.style = "display: none"; //display sumirá - no css o display está none
       }
+
     });
+
+//Evento criado para que o click am algum botão não recarregue a pág
+botao.addEventListener("click", function(event){
+    console.log(texto.value);
+    event.preventDefault()
+});
+
+
+btnCodificar.addEventListener("click", function(event) {
+
+    if (event.target.value == "base.64"){
+       txtResultado = codeBase(texto)
+      //codificar base 64/
+    }
+
+});
+  
+btnDecodificar.addEventListener("click", function() {
+
+    if(btnDecodificar.checked && seletor.value == "cifraCesar"){
+        txtResultado.value = decifra(parseInt(passo.value), texto.value);
+    //decodificar cifra//
+    }else if (decodificar.checked && seletor.value == "base.64") {
+        txtResultado.value = decodeBase(texto.value)
+    //decodificar base//
+    }
  
+})
 
+//Funções de codificação e descodificação em Base64
+function codeBase (texto) {
+    return btoa(texto)
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Mostrar div escondida //
-
-
-function mostrarDiv() {
-    
-    var x = document.getElementById('divEscondida');
-
-        if (seletor[1].checked && x.style.display === 'none') {
-            x.style.display = 'block';
-               
-       } else {
-            x.style.display = 'none';
-       }
+function decodeBase (texto) {
+    return atob(texto) 
 }
