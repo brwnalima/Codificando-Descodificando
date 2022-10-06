@@ -14,7 +14,6 @@ seletor.addEventListener("change", function(event){
     if (event.target.value == "cifraCesar") { // Se o value for o value cifraCesar
 
         addContainer.style = "display: block"; // Display aparecerá
-        document.body.style.backgroundPosition = "center";
 
     } else { // Senão
         
