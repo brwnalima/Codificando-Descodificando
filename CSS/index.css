@@ -47,7 +47,7 @@ body {
 
     font-family: var(--font-size-txt);
     background-image: url(../IMAGES/fundo.gif);
-    background-repeat: no-repeat;
+    background-position: center;
     
     line-height: 100%;
     letter-spacing: 5%;
@@ -236,7 +236,7 @@ a {
 @media only screen and (max-width: 1800px) {
 
     body {
-        background-size: auto 130%;
+        background-position: center;
     }
 }
 
@@ -333,7 +333,7 @@ a {
 @media only screen and (max-width: 501px) {
 
     body {
-        background-size: auto 170%;
+        background-position: center;
     }
 
     #titulo-principal {
