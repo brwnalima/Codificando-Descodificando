@@ -48,7 +48,8 @@ body {
     font-family: var(--font-size-txt);
     background-image: url(../IMAGES/fundo.gif);
     background-position: center;
-    
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     line-height: 100%;
     letter-spacing: 5%;
     background-size: auto 116%;
