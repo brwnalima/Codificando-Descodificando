@@ -304,7 +304,7 @@ a {
 
     .btn-cod-ou-desc {
 
-        height: 31px;
+        height: 32px;
         width: 60%;
         display: grid;
         grid-column: auto;
@@ -377,15 +377,15 @@ a {
 
     .btn-cod-ou-desc {
 
-        height: 35px;
+        height: 32px;
         width: 70%;
+        text-align: center;
         display: grid;
         grid-column: auto;
         margin: auto;
         margin-top: 2%;
         margin-top: 1%;
         margin-bottom: 2%;
-        text-align: center;
         font-size: 11px;
         transition: all 0.5s ease-in-out;
 
