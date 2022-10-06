@@ -48,9 +48,8 @@ body {
     font-family: var(--font-size-txt);
     /**GIF RESPONSIVO**/
     background-image: url(../IMAGES/fundo.gif);
-    background-size: 1530px;
-    background-attachment: scroll;
-    background-repeat: no-repeat;
+    background-size: auto 120%;
+    background-attachment: fixed, scroll;
     /**GIF RESPONSIVO**/
     line-height: 100%;
     letter-spacing: 5%;
@@ -238,7 +237,8 @@ a {
 @media only screen and (max-width: 1800px) {
 
     body {
-        background-position: center;
+        background-size: auto 120%;
+        background-attachment: fixed, scroll;
     }
 }
 
@@ -273,6 +273,11 @@ a {
 }
 
 @media only screen and (max-width: 975px) {
+
+    body {
+        background-size: auto 120%;
+        background-attachment: fixed, scroll;
+    }
     
     #titulo-principal {
         font-size: 150%;
@@ -299,8 +304,8 @@ a {
 
     .btn-cod-ou-desc {
 
-        height: 26px;
-        width: 50%;
+        height: 31px;
+        width: 60%;
         display: grid;
         grid-column: auto;
         margin: auto;
@@ -335,7 +340,8 @@ a {
 @media only screen and (max-width: 501px) {
 
     body {
-        background-position: center;
+        background-size: auto 120%;
+        background-attachment: fixed, scroll;
     }
 
     #titulo-principal {
@@ -371,8 +377,8 @@ a {
 
     .btn-cod-ou-desc {
 
-        height: 26px;
-        width: 50%;
+        height: 31px;
+        width: 60%;
         display: grid;
         grid-column: auto;
         margin: auto;
